@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kn1ght Bot</title>
+    <link rel="icon" href="images/favicon.gif" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <!-- Particle effect container -->
+    <audio id="hover-sound" src="sounds/hover.mp3"></audio>
+    <!-- Hover sound -->
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+    <!-- Click sound -->
+
+    <header>
+      <div class="logo">
+        <img src="images/logo.gif" alt="Discord Bot Logo" />
+      </div>
+      <h1>Welcome to Kn1ght Bot Info</h1>
+      <p>A fully customizable and interactive music bot for your server!</p>
+    </header>
+
+    <div class="buttons">
+      <a
+        href="https://discord.com/api/oauth2/authorize?client_id=1131526582306082858&permissions=8&scope=bot"
+        class="btn invite-btn"
+        target="_blank"
+        >Invite the Bot</a
+      >
+      <a
+        href="https://discord.gg/mystichaven"
+        class="btn support-btn"
+        target="_blank"
+        >Join Support Server</a
+      >
+    </div>
+
+    <section class="features">
+      <div class="feature-card">
+        <div class="icon-container">
+          <img src="images/icon1.png" alt="Feature 1" />
+        </div>
+        <h2>High-Quality Audio Streaming</h2>
+        <p>
+          Enjoy crystal-clear sound with seamless streaming from multiple
+          sources like YouTube, Spotify, and SoundCloud.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-container">
+          <img src="images/icon3.png" alt="Feature 2" />
+        </div>
+        <h2>Advanced Playlist & Queue Management</h2>
+        <p>
+          Create, edit, and shuffle playlists effortlessly. Users can also vote
+          to skip tracks, ensuring everyone enjoys the vibe.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-container">
+          <img src="images/icon4.png" alt="Feature 3" />
+        </div>
+        <h2>Custom Sound Effects & Equalizer</h2>
+        <p>
+          Personalize your listening experience with bass boost, 3D surround
+          sound, and custom sound effects for the ultimate audio control.
+        </p>
+      </div>
+    </section>
+
+    <section class="bot-status">
+      <h2>Bot Status</h2>
+      <div class="status-container">
+        <div class="status-item">
+          <span class="status-label">Online Status:</span>
+          <span class="status-value" id="online-status">Loading...</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Servers:</span>
+          <span class="status-value" id="server-count">Loading...</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Users:</span>
+          <span class="status-value" id="user-count">Loading...</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="commands">
+      <h2>Commands</h2>
+      <div class="commands-container">
+        <div class="command-card">
+          <h3>!ping</h3>
+          <p>Check the bot's latency.</p>
+        </div>
+        <div class="command-card">
+          <h3>!help</h3>
+          <p>Get a list of available commands.</p>
+        </div>
+        <div class="command-card">
+          <h3>!play</h3>
+          <p>Play music in your voice channel.</p>
+        </div>
+        <div class="command-card">
+          <h3>!botinfo</h3>
+          <p>Get the bot info.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <h2>Statistics</h2>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" id="total-commands">528+</div>
+          <div class="stat-label">Commands Executed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="active-servers">125</div>
+          <div class="stat-label">Active Servers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="happy-users">97,000+</div>
+          <div class="stat-label">Happy Users</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p>
+            "This bot is amazing! It has completely transformed our server."
+          </p>
+          <div class="testimonial-author">- Mayank</div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "The commands are so easy to use, and the support is fantastic!"
+          </p>
+          <div class="testimonial-author">- DiscordFan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Chat Widget -->
+    <div class="live-chat">
+      <button id="chat-toggle">💬</button>
+      <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+          Live Chat
+          <button id="chat-close">×</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input">
+          <input type="text" id="chat-input" placeholder="Type a message..." />
+          <button id="chat-send">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2019 Kn1ght bot. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
